@@ -32,7 +32,7 @@ _backslash,     _Q,         _W,      _E,      _R,    _T,    1,
      _guiL, _grave, _backslash, _arrowL, _arrowR,
                                                  _ctrlL, _altL,
                                               0,      0, _home,
-                                            _bs,   _del,  _end,
+                                         _space, _enter,  _end,
 // right hand
         3, _6,      _7,      _8,      _9,         _0,     _dash,
 _bracketL, _Y,      _U,      _I,      _O,         _P, _bracketR,
@@ -41,7 +41,7 @@ _bracketL, _Y,      _U,      _I,      _O,         _P, _bracketR,
                _arrowL, _arrowD, _arrowU,    _arrowR,     _guiR,
  _altR, _ctrlR,
 _pageU,      0,      0,
-_pageD, _enter, _space ),
+_pageD,   _del,    _bs ),
 
 
 	KB_MATRIX_LAYER(  // layout: layer 1: function and symbol keys
