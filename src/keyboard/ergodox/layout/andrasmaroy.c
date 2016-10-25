@@ -48,11 +48,11 @@ _pageD,   _del,    _bs ),
 // unused
 0,
 // left hand
-  0,        _F1,        _F2,       _F3,       _F4,       _F5, _F11,
-  0,  _bracketL,  _bracketR, _bracketL, _bracketR,         0,    1,
-  0, _semicolon,     _slash,     _dash,     _0_kp,_semicolon,
-  0,      _6_kp,      _7_kp,     _8_kp,     _9_kp,    _equal,    2,
-  0,          0,          0,         0,         0,
+                    0,        _F1,        _F2,       _F3,       _F4,       _F5, _F11,
+  MEDIAKEY_NEXT_TRACK,  _bracketL,  _bracketR, _bracketL, _bracketR,         0,    1,
+  MEDIAKEY_PREV_TRACK, _semicolon,     _slash,     _dash,     _0_kp,_semicolon,
+  MEDIAKEY_PLAY_PAUSE,      _6_kp,      _7_kp,     _8_kp,     _9_kp,    _equal,    2,
+                    0,          0,          0,         0,         0,
                                                              0,  0,
                                                          0,  0,  0,
                                                          0,  0,  0,
@@ -149,6 +149,9 @@ _F12,       _F6,    _F7,       _F8,       _F9,         _F10,   _power,
 // device
 #define  dbtldr  &kbfun_jump_to_bootloader
 
+// media
+#define  mprrel   &kbfun_mediakey_press_release
+
 // special
 #define  sshprre  &kbfun_shift_press_release
 #define  s2kcap   &kbfun_2_keys_capslock_press_release
@@ -188,9 +191,9 @@ NULL,
 NULL,
 // left hand
    NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
- ktrans,sshprre,sshprre, kprrel, kprrel,   NULL,  lpop1,
- ktrans, kprrel, kprrel, kprrel, kprrel,sshprre,
- ktrans, kprrel, kprrel, kprrel, kprrel,sshprre, lpush2,
+ mprrel,sshprre,sshprre, kprrel, kprrel,   NULL,  lpop1,
+ mprrel, kprrel, kprrel, kprrel, kprrel,sshprre,
+ mprrel, kprrel, kprrel, kprrel, kprrel,sshprre, lpush2,
  ktrans, ktrans, ktrans, ktrans, ktrans,
                                                  ktrans, ktrans,
                                          ktrans, ktrans, ktrans,
@@ -286,9 +289,9 @@ NULL,
 NULL,
 // left hand
    NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
- ktrans,sshprre,sshprre, kprrel, kprrel,   NULL,   NULL,
- ktrans, kprrel, kprrel, kprrel, kprrel,sshprre,
- ktrans, kprrel, kprrel, kprrel, kprrel,sshprre,  lpop2,
+ mprrel,sshprre,sshprre, kprrel, kprrel,   NULL,   NULL,
+ mprrel, kprrel, kprrel, kprrel, kprrel,sshprre,
+ mprrel, kprrel, kprrel, kprrel, kprrel,sshprre,  lpop2,
  ktrans, ktrans, ktrans, ktrans, ktrans,
                                                  ktrans, ktrans,
                                          ktrans, ktrans, ktrans,
